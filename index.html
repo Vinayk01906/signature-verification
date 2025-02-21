@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Signature Verification System</h1>
+    </header>
+
+    <div class="container">
+        <section class="upload-section">
+            <h2>Upload or Draw Your Signature</h2>
+            <p>Please upload or draw your signature for verification.</p>
+
+            <!-- Signature Drawing Area -->
+            <canvas id="signaturePad" width="500" height="200"></canvas>
+            <div>
+                <button id="clearButton">Clear</button>
+                <button id="saveButton">Save Signature</button>
+            </div>
+            
+            <p>OR</p>
+
+            <!-- File Upload -->
+            <input type="file" id="fileInput" accept="image/*">
+            <div id="imagePreview"></div>
+
+            <!-- Verify Button -->
+            <button id="verifyButton">Verify Signature</button>
+        </section>
+
+        <section id="verificationResult" class="result-section" style="display:none;">
+            <h2>Verification Result</h2>
+            <p id="resultMessage"></p>
+            <p>Confidence: <span id="confidenceScore"></span></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Signature Verification System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
