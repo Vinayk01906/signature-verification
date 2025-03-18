@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Verification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Signature Verification System</h1>
+
+    <div class="upload-section">
+        <div class="upload-box">
+            <label for="genuineUpload">Upload Genuine Signature:</label>
+            <input type="file" id="genuineUpload" accept="image/*" onchange="previewImage(event, 'genuinePreview')">
+            <img id="genuinePreview" src="" alt="Genuine Signature Preview">
+        </div>
+
+        <div class="upload-box">
+            <label for="forgedUpload">Upload Test Signature:</label>
+            <input type="file" id="forgedUpload" accept="image/*" onchange="previewImage(event, 'forgedPreview')">
+            <img id="forgedPreview" src="" alt="Test Signature Preview">
+        </div>
+    </div>
+
+    <button id="verifyBtn">Verify Signature</button>
+    <button id="trainModelBtn">Train Model</button>
+
+    <p id="result"></p>
+
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</body>
+</html>
