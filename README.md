@@ -1,7 +1,7 @@
 # 🌙 **Signature Verification System**
 
 Signature Verification System using a pretrained **Siamese Neural Network (ResNet50)**, Flask backend, 
-and real-time web interface. Designed with a **dark aesthetic** for modern UI/UX lovers.
+and real-time web interface.
 
 ## 🛠️ **Tech Stack & Tools**
 ### AI / ML
