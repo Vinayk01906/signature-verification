@@ -56,4 +56,3 @@ node server.js
  ┃ ┣ index.html
  ┃ ┣ style.css
  ┃ ┗ script.js
- ┗ README_dark.md
